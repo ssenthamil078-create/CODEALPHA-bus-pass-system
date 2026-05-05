@@ -63,3 +63,18 @@ User → Web Interface → Flask Backend → MySQL Database → Cloud Server (AW
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/bus-pass-system.git
+python -m venv myenv
+source myenv/bin/activate   # Linux
+myenv\Scripts\activate      # Windows
+pip install -r requirements.txt
+4. Setup MySQL Database
+Create a database (e.g., buspassdb)
+Import schema if available
+5. Configure Database
+
+Update your config.py:
+MYSQL_HOST = 'localhost'
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = 'your_password'
+MYSQL_DB = 'buspassdb'
+python app.py
